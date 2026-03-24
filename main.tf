@@ -61,7 +61,7 @@ resource "aws_instance" "sonar" {
 
 resource "aws_security_group" "main" {
   name        =  "${var.project}-${var.environment}-jenkins"
-  description = "Created to attatch Jenkins and its agents"
+  description = "Created to attach Jenkins and its agents"
 
   egress {
     from_port        = 0
