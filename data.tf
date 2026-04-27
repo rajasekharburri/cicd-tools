@@ -1,11 +1,10 @@
-
-data "aws_ami" "aws msp" {
+data "aws_ami" "joindevops" {
 
     most_recent = true
-    owners = ["672945439745"]
+    owners = ["973714476881"]
 
     filter {
-        name   = "name"
+        name   = "name"   
         values = ["Redhat-9-DevOps-Practice"]
     }
 
@@ -19,7 +18,6 @@ data "aws_ami" "aws msp" {
         values = ["hvm"]
     }
 }
-
 
 # data "aws_ami" "sonarqube" {
 #   most_recent = true
