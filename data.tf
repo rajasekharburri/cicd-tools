@@ -1,8 +1,8 @@
 
-data "aws_ami" "joindevops" {
+data "aws_ami" "aws msp" {
 
     most_recent = true
-    owners = ["973714476881"]
+    owners = ["672945439745"]
 
     filter {
         name   = "name"
@@ -21,22 +21,22 @@ data "aws_ami" "joindevops" {
 }
 
 
-data "aws_ami" "sonarqube" {
-  most_recent = true
-  owners      = ["679593333241"] # Solve DevOps
+# data "aws_ami" "sonarqube" {
+#   most_recent = true
+#   owners      = ["679593333241"] # Solve DevOps
 
-  filter {
-    name   = "name"
-    values = ["SolveDevOps-SonarQube-Server-Ubuntu24.04-*"]
-  }
+#   filter {
+#     name   = "name"
+#     values = ["SolveDevOps-SonarQube-Server-Ubuntu24.04-*"]
+#   }
 
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
+#   filter {
+#     name   = "virtualization-type"
+#     values = ["hvm"]
+#   }
 
-  filter {
-    name   = "architecture"
-    values = ["x86_64"]
-  }
-}
+#   filter {
+#     name   = "architecture"
+#     values = ["x86_64"]
+#   }
+# }
